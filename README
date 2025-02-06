@@ -1,0 +1,34 @@
+# Estudos em C
+
+Este repositório contém códigos e exemplos de estudo na linguagem de programação C. O objetivo é fornecer uma base sólida para quem está aprendendo C e deseja praticar e aprimorar suas habilidades em lógica de programação.
+
+## Estrutura do Repositório
+
+
+- **Exercícios**: Conjunto de exercícios para praticar e testar seus conhecimentos.
+
+
+
+## Como Usar
+
+1. Clone o repositório para sua máquina local:
+    ```https
+    git clone https://github.com/ggasparott/AlgoritmosEstudos.git
+    ```
+2. Navegue até o diretório clonado:
+    ```
+    cd AlgoritmosEstudos
+    ```
+3. Explore os exemplos, exercícios e projetos disponíveis.
+
+## Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias, correções ou novos exemplos.
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+## Contato
+
+Para dúvidas ou sugestões, entre em contato pelo email: gabrielgasparotto45@gmail.com
