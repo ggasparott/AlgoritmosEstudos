@@ -14,6 +14,7 @@ int main(){
         scanf("%lf", &v[i]);
     }
     printf("A media dos valores do vetor eh: %.2lf\n", media(v, tam));
+    free(v);
 }
 
 double media(double v[], int tam){
