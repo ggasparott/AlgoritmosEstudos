@@ -3,6 +3,8 @@
 #include <math.h>
 
 double desvioPadrao(double v[], int tam){
+    if(tam <= 1) return 0;
+    
     double somaS = 0;
     for(int i = 0; i < tam; i++){
         somaS += v[i];
