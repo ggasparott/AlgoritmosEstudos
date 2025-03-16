@@ -17,6 +17,10 @@ int main(){
     imprimirAluno(estudante, 5);
     mediaIdade(estudante, 5);
 
+<<<<<<< HEAD
+=======
+    return 0;
+>>>>>>> f6ddbbb1d391846a1f1786d421f74efcac35f3d1
 }
 
 void lerAluno(Aluno estudante[], int n){
@@ -44,6 +48,13 @@ void mediaIdade(Aluno estudante[], int n){
     for(i = 0; i < n; i++){
         media += estudante[i].idade;
     }
+<<<<<<< HEAD
     media = media/n;
     printf("Media de idade: %.2f\n", media);
 }
+=======
+    media = media / n;
+    printf("Media de idade: %.2f\n", media);
+}
+cz esse código é simples
+>>>>>>> f6ddbbb1d391846a1f1786d421f74efcac35f3d1
