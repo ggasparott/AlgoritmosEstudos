@@ -1,19 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
-<<<<<<< HEAD
-
-typedef struct{
-=======
 #include <string.h>
 
 typedef struct {
->>>>>>> 4cfd93b479d3790d818714b69ac45f4a3d930abe
     char model[50];
     int year;
     int price;
 } Car;
 
-<<<<<<< HEAD
+
 int main(){
     Car car[5];
     int i;
@@ -35,7 +30,7 @@ int main(){
     return 0;
 
 }
-=======
+
 void lerCarros(Car carros[], int n) {
     for (int i = 0; i < 3; i++) {
         printf("Digite o nome do modelo do carro: ");
@@ -75,4 +70,4 @@ int main(){
 
     return 0;
 }
->>>>>>> 4cfd93b479d3790d818714b69ac45f4a3d930abe
+

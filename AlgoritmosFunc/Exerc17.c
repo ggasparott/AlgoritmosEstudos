@@ -12,18 +12,18 @@ typedef struct {
 void lerLivros(Livros livros[], int n) {
     for (int i = 0; i < n; i++) {
         printf("\nDigite o titulo do livro: ");
-        scanf(" %[^\n]", livros[i].Titulo);  // Espaço antes de %[^\n]
+        scanf(" %[^\n]", livros[i].Titulo);  
 
         printf("Digite o nome do autor: ");
         scanf(" %[^\n]", livros[i].Autor);
 
         printf("Digite o ano de publicação: ");
         scanf("%d", &livros[i].anoPublicacao);
-        getchar(); // Limpar buffer do teclado
+        getchar(); 
 
         printf("Digite o preco do livro: ");
         scanf("%f", &livros[i].preco);
-        getchar(); // Limpar buffer do teclado
+        getchar(); 
     }
 }
 
@@ -39,7 +39,7 @@ void exibirLivros(Livros livros[], int n) {
 
 int main() {
     int n = 4;
-    Livros livros[n];
+    Livros livros[4];
 
     lerLivros(livros, n);
     exibirLivros(livros, n);
