@@ -69,7 +69,7 @@ void ordenaQuant(Produto vet[], int n){
     for(int i = 0; i < n; i++){
         int min_idx = i;
         for(int j = i + 1; j < n; j++){
-            if(vet[j].preco < vet[min_idx].preco){
+            if(vet[j].quant < vet[min_idx].quant){
                 min_idx = j;
         }
         Produto temp = vet[min_idx];
