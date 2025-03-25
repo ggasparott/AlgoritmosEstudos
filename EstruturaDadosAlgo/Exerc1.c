@@ -1,39 +1,59 @@
 #include <stdio.h>
+#define MAX_TAM 10
 
 // Função de busca binária
-int busca_binaria(int arr[], int n, int x) {
+int busca_binaria(int arr[], int n, int x, int posicoes[]) {
     int esquerda = 0, direita = n - 1;
-
+    int count = 0;
     while (esquerda <= direita) {
         int meio = esquerda + (direita - esquerda) / 2;
-
-        // Verifica se o valor no meio é o que estamos procurando
+        
+        
         if (arr[meio] == x) {
-            return meio; // Retorna o índice do elemento encontrado
+            posicoes[count++] = meio; 
+
+            int temp = meio - 1;
+            while (temp >= 0 && arr[temp] == x) {
+                posicoes[count++] = temp;
+                temp--;
+            }
+
+           
+            temp = meio + 1;
+            while (temp < n && arr[temp] == x) {
+                posicoes[count++] = temp;
+                temp++;
+            }
+
+            break; 
+
         }
 
-        // Se o valor desejado for maior, ignore a metade esquerda
+        
         if (arr[meio] < x) {
             esquerda = meio + 1;
         }
-        // Se o valor desejado for menor, ignore a metade direita
+        
         else {
             direita = meio - 1;
         }
     }
 
-    return -1; // Retorna -1 se o valor não for encontrado
+    return count; 
 }
 
 int main() {
-    int arr[] = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
+    int arr[] = {15, 3, 5, 7, 9, 15, 13, 15, 17, 19};
     int n = sizeof(arr) / sizeof(arr[0]);
-    int x = 15; // Valor a ser procurado
-
-    int resultado = busca_binaria(arr, n, x);
+    int x = 15; 
+    int posRep[MAX_TAM];
+    int resultado = busca_binaria(arr, n, x, posRep);
     
-    if (resultado != -1) {
-        printf("Elemento encontrado no índice %d.\n", resultado);
+    if (resultado  > 0) {
+        
+        for(int i = 0; i < resultado; i++){
+            printf("Os elementos repitidos foram encotrados nos indices: %d", posRep[i]);
+        }
     } else {
         printf("Elemento não encontrado.\n");
     }
