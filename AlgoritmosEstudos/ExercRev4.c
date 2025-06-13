@@ -1,15 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-typedef struct {
-    float p1,p2,p3;
-} Notas;
 
 typedef struct {
     char nome[30];
     int RA;
-    Notas nota;
-    float media;
+    
 } Aluno;
 
 void cadastrarAlunos(Aluno al[], int n) {
